@@ -46,6 +46,7 @@ p.addEventListener("click", function() {
 })
 */
 
+/* OBJECTIVE 5
 let button = document.getElementById("button");
 let div = document.getElementById("div");
 button.addEventListener("click", function() {
@@ -53,4 +54,17 @@ button.addEventListener("click", function() {
     div.appendChild(span);
     let text = document.createTextNode("Evan");
     span.appendChild(text);
+})
+*/
+
+let friends = ["Trey", "Tony", "Russ", "Ray", "Cyro", "Jen", "Dave", "Andy", "Peter", "Russell"];
+let button = document.getElementById("button");
+let ul = document.getElementById("ul");
+button.addEventListener("click", function () {
+    for (let i = 0; i < friends.length; i++) {
+        let li = document.createElement("li");
+        let name = document.createTextNode(friends[i]);
+        li.appendChild(name);
+        ul.appendChild(li);
+    }
 })
