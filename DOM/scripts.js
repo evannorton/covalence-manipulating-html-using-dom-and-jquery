@@ -1,4 +1,4 @@
-
+/*
 addEventListener("DOMContentLoaded", button);
 function button() {
     let button = document.createElement("button");
@@ -10,4 +10,12 @@ function button() {
     function click() {
         alert("This is a very nice message.")
     }
+}
+*/
+
+let button = document.getElementById("button");
+button.addEventListener("click", click);
+function click() {
+    let message = document.getElementById("text-box").value;
+    alert(message);
 }
