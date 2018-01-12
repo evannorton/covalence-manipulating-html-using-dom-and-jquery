@@ -32,6 +32,7 @@ div.addEventListener("mouseleave", function() {
 })
 */
 
+/* OBJECTIVE 4
 let p = document.getElementById("p");
 p.addEventListener("click", function() {
     let allchar = "0123456789ABCDEF";
@@ -42,4 +43,14 @@ p.addEventListener("click", function() {
     }
 
     p.style.color = "#" + randcol;
+})
+*/
+
+let button = document.getElementById("button");
+let div = document.getElementById("div");
+button.addEventListener("click", function() {
+    let span = document.createElement("span");
+    div.appendChild(span);
+    let text = document.createTextNode("Evan");
+    span.appendChild(text);
 })
