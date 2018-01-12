@@ -1,3 +1,4 @@
+
 addEventListener("DOMContentLoaded", button);
 function button() {
     let button = document.createElement("button");
@@ -7,6 +8,6 @@ function button() {
 
     addEventListener("click", click);
     function click() {
-        console.log("This is a very nice message.")
+        alert("This is a very nice message.")
     }
 }
