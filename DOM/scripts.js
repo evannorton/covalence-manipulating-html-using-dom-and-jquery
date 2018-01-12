@@ -22,10 +22,24 @@ function click() {
 }
 */
 
+/* OBJECTIVE 3
 let div = document.getElementById("div");
 div.addEventListener("mouseenter", function() {
     div.style.backgroundColor = "red";
 })
 div.addEventListener("mouseleave", function() {
     div.style.backgroundColor = "black";
+})
+*/
+
+let p = document.getElementById("p");
+p.addEventListener("click", function() {
+    let allchar = "0123456789ABCDEF";
+    let randcol = "";
+
+    for (let i = 0; i < 6; i++) {
+        randcol += allchar[Math.floor(Math.random() * 16)];
+    }
+
+    p.style.color = "#" + randcol;
 })
