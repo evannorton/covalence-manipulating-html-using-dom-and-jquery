@@ -6,8 +6,17 @@ $button.click(function () {
 });
 */
 
+/* OBJECTIVE 2
 let $button = $("#button");
 $button.click( function () {
     let message = $("#text-box").val();
     alert(message);
 });
+*/
+
+let $div = $("#div");
+$div.hover(function() {
+    div.style.backgroundColor = "red";
+}, function() {
+    div.style.backgroundColor = "black";
+})
