@@ -20,9 +20,10 @@ $div.hover(function() {
     div.style.backgroundColor = "red";
 }, function() {
     div.style.backgroundColor = "black";
-})
+});
 */
 
+/* OBJECTIVE 4
 let $p = $("#p");
 $p.click( function() {
     let $allchar = "0123456789ABCDEF";
@@ -33,4 +34,12 @@ $p.click( function() {
     }
 
     $($p).css("color", "#" + $randcol);
-})
+});
+*/
+
+let $button = $("#button");
+let $div = $("#div");
+$button.click( function() {
+    let $span = $("<span>Evan</span>");
+    $($span).appendTo($div);
+});
