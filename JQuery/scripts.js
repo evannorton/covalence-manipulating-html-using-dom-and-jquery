@@ -14,9 +14,23 @@ $button.click( function () {
 });
 */
 
+/* OBJECTIVE 3
 let $div = $("#div");
 $div.hover(function() {
     div.style.backgroundColor = "red";
 }, function() {
     div.style.backgroundColor = "black";
+})
+*/
+
+let $p = $("#p");
+$p.click( function() {
+    let $allchar = "0123456789ABCDEF";
+    let $randcol = "";
+
+    for (let i = 0; i < 6; i++) {
+        $randcol += $allchar[Math.floor(Math.random() * 16)];
+    }
+
+    $($p).css("color", "#" + $randcol);
 })
