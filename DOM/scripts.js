@@ -67,4 +67,4 @@ button.addEventListener("click", function () {
         li.appendChild(name);
         ul.appendChild(li);
     }
-})
+});

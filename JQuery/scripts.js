@@ -37,9 +37,21 @@ $p.click( function() {
 });
 */
 
+/* OBJECTIVE 5
 let $button = $("#button");
 let $div = $("#div");
 $button.click( function() {
     let $span = $("<span>Evan</span>");
     $($span).appendTo($div);
+});
+*/
+
+let $friends = ["Trey", "Tony", "Russ", "Ray", "Cyro", "Jen", "Dave", "Andy", "Peter", "Russell"];
+let $button = $("#button");
+let $ul = $("#ul");
+$($button).click( function () {
+    for (let i = 0; i < $friends.length; i++) {
+        let $li = $("<li>" + ($friends[i]) + "</li>");
+        $($li).appendTo($ul);
+    }
 });
